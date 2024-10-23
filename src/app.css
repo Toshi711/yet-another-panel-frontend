@@ -1,0 +1,137 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body, html, #root, .ant-layout {
+  height: 100%;
+  background-color: #09111d
+};
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+
+a {
+  color: white;
+}
+
+header {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex !important;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto
+}
+
+.content {
+  width: 100%;
+  max-width: 1080px !important;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.profile {
+  font-size: 16px;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+iframe{
+  display: none !important;
+}
+
+.component {
+  border-radius: 10px;
+  padding: 5px 0;
+  width: 100%;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.ant-flex .component{
+  flex: 0 0;
+}
+
+.nested {
+  padding-left: 20px;
+}
+
+.componentDescription{
+  opacity: 0.5;
+  padding-left: 10px;
+}
+
+.moduleDescription {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.componentTitle {
+  font-size: 1rem;
+}
+.ant-divider{
+  margin: 0 !important;
+}
+
+.float-label {
+  position: relative;
+}
+
+.label {
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 11px;
+  transition: 0.2s ease all;
+}
+
+.as-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  top: 10px;
+}
+
+.as-label {
+  top: -8px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px !important;
+  background-color: #111e2f;
+  padding: 0 4px;
+  margin-left: -4px;
+}
+
+.componentBlock {
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.componentText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.componentBorder:not(:last-child){
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.089);
+  margin: 20px 0;
+}
+

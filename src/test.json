@@ -1,0 +1,223 @@
+{
+  "title": "Example Schema",
+  "type": "object",
+  "properties": {
+    "logs": {
+      "type": "object",
+      "_name": "Логи",
+      "_description": "Логирование штук",
+      "properties": {
+        "voiceStateUpdate": {
+          "type": "object",
+          "_component": "flex",
+          "properties": {
+            "status": {
+              "type": "boolean",
+              "_component": "switch",
+              "_name": "Пользователь присоединяется к серверу",
+              "_grow": true
+            },
+            "channel": {
+              "type": "string",
+              "_component": "input",
+              "_placeholder": "Канал",
+              "_grow": true,
+              "_description": "Пример описания"
+            }
+          }
+        },
+        "voiceStateUpdate2": {
+          "type": "object",
+          "_component": "flex",
+          "properties": {
+            "status": {
+              "type": "boolean",
+              "_component": "checkbox",
+              "_name": "Пользователь присоединяется к серверу",
+              "_grow": true
+            },
+            "channel": {
+              "type": "string",
+              "_component": "input",
+              "_placeholder": "Канал",
+              "_grow": true
+            },
+            "test": {
+              "type": "object",
+              "_grow": true,
+              "properties": {
+                  "status": {
+                    "type": "boolean",
+                    "_component": "checkbox",
+                    "_name": "Доп чекбокс",
+                    "_grow": true
+                  },
+                  "status2": {
+                    "type": "boolean",
+                    "_component": "checkbox",
+                    "_name": "Доп чекбокс 2",
+                    "_grow": true
+                  },
+                  "status3": {
+                    "type": "boolean",
+                    "_component": "checkbox",
+                    "_name": "Доп чекбокс 3",
+                    "_grow": true
+                  }
+                }
+              }
+            }
+          },
+          "voiceStateUpdate3": {
+            "type": "object",
+            "properties": {
+              "channel": {
+                "type": "string",
+                "_component": "input",
+                "_placeholder": "Канал"
+              },
+              "channel2": {
+                "type": "string",
+                "_component": "input",
+                "_placeholder": "Канал2"
+              },
+              "channel3": {
+                "type": "string",
+                "_component": "input",
+                "_placeholder": "Канал3"
+              },
+              "color": {
+                "type": "string",
+                "_name": "Выбор цвета",
+                "_component": "color"
+              },
+              "flex": {
+                "type": "object",
+                "_component": "flex",
+                "properties": {
+                  "channel2": {
+                    "type": "string",
+                    "_component": "input",
+                    "_placeholder": "Канал2",
+                    "_grow": true
+                  },
+                  "channel3": {
+                    "type": "string",
+                    "_component": "input",
+                    "_placeholder": "Канал3",
+                    "_grow": true
+                  },
+                  "channel4": {
+                    "type": "string",
+                    "_component": "input",
+                    "_placeholder": "Канал4",
+                    "_grow": true
+                  }
+                }
+              },
+              "tickets": {
+                "type": "object",
+                "properties": {
+                  "ticketssasd": {
+                    "type": "array",
+                    "_name": "fsadsadas",
+                    "_component": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "boolean",
+                            "_name": "Статус",
+                            "_component": "switch"
+                          },
+                          "ip": {
+                            "type": "string",
+                            "_name": "IP",
+                            "_component": "input",
+                            "_description": "ip сервера"
+                          },
+                          "role": {
+                            "type": "object",
+                            "_name": "Inner",
+                            "properties": {
+  
+                              "tickets": {
+                                "type": "array",
+                                "_component": "array",
+                                "items": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "status": {
+                                        "type": "boolean",
+                                        "_name": "Статус",
+                                        "_component": "switch"
+                                      },
+                                      "ip": {
+                                        "type": "string",
+                                        "_name": "IP",
+                                        "_component": "input",
+                                        "_description": "ip сервера"
+                                      }
+                                    
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+            
+        }
+        }
+      },
+      "activity": {
+        "type": "object",
+        "_name": "Активность",
+        "properties": {
+          "status": {
+            "type": "boolean",
+            "_name": "Модуль",
+            "_component": "switch"
+          },
+          "ip": {
+            "type": "string",
+            "_name": "IP",
+            "_component": "input",
+            "_description": "ip сервера"
+          },
+          "role": {
+            "type": "string",
+            "_name": "Роль",
+            "_component": "role"
+          },
+          "roleMulti": {
+            "type": "array",
+            "items": [{"type": "string"}],
+            "_name": "Роль",
+            "_component": "role",
+            "_multi": true
+          },
+          "channel": {
+            "type": "string",
+            "_name": "Роль",
+            "_component": "channel"
+          },
+          "channelMulti": {
+            "type": "array",
+            "items": [{"type": "string"}],
+            "_name": "Роль",
+            "_component": "channel",
+            "_multi": true
+          }
+        }
+      }
+  }
+}
